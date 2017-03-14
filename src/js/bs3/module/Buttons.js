@@ -284,48 +284,48 @@ define([
         }).render();
       });
 
-      var justifyLeft = ui.button({
-        contents: ui.icon(options.icons.alignLeft),
-        tooltip: lang.paragraph.left + representShortcut('justifyLeft'),
-        click: context.createInvokeHandler('editor.justifyLeft')
-      });
+      // var justifyLeft = ui.button({
+      //   contents: ui.icon(options.icons.alignLeft),
+      //   tooltip: lang.paragraph.left + representShortcut('justifyLeft'),
+      //   click: context.createInvokeHandler('editor.justifyLeft')
+      // });
 
-      var justifyCenter = ui.button({
-        contents: ui.icon(options.icons.alignCenter),
-        tooltip: lang.paragraph.center + representShortcut('justifyCenter'),
-        click: context.createInvokeHandler('editor.justifyCenter')
-      });
+      // var justifyCenter = ui.button({
+      //   contents: ui.icon(options.icons.alignCenter),
+      //   tooltip: lang.paragraph.center + representShortcut('justifyCenter'),
+      //   click: context.createInvokeHandler('editor.justifyCenter')
+      // });
 
-      var justifyRight = ui.button({
-        contents: ui.icon(options.icons.alignRight),
-        tooltip: lang.paragraph.right + representShortcut('justifyRight'),
-        click: context.createInvokeHandler('editor.justifyRight')
-      });
+      // var justifyRight = ui.button({
+      //   contents: ui.icon(options.icons.alignRight),
+      //   tooltip: lang.paragraph.right + representShortcut('justifyRight'),
+      //   click: context.createInvokeHandler('editor.justifyRight')
+      // });
 
-      var justifyFull = ui.button({
-        contents: ui.icon(options.icons.alignJustify),
-        tooltip: lang.paragraph.justify + representShortcut('justifyFull'),
-        click: context.createInvokeHandler('editor.justifyFull')
-      });
+      // var justifyFull = ui.button({
+      //   contents: ui.icon(options.icons.alignJustify),
+      //   tooltip: lang.paragraph.justify + representShortcut('justifyFull'),
+      //   click: context.createInvokeHandler('editor.justifyFull')
+      // });
 
-      var outdent = ui.button({
-        contents: ui.icon(options.icons.outdent),
-        tooltip: lang.paragraph.outdent + representShortcut('outdent'),
-        click: context.createInvokeHandler('editor.outdent')
-      });
+      // var outdent = ui.button({
+      //   contents: ui.icon(options.icons.outdent),
+      //   tooltip: lang.paragraph.outdent + representShortcut('outdent'),
+      //   click: context.createInvokeHandler('editor.outdent')
+      // });
 
-      var indent = ui.button({
-        contents: ui.icon(options.icons.indent),
-        tooltip: lang.paragraph.indent + representShortcut('indent'),
-        click: context.createInvokeHandler('editor.indent')
-      });
+      // var indent = ui.button({
+      //   contents: ui.icon(options.icons.indent),
+      //   tooltip: lang.paragraph.indent + representShortcut('indent'),
+      //   click: context.createInvokeHandler('editor.indent')
+      // });
 
-      context.memo('button.justifyLeft', func.invoke(justifyLeft, 'render'));
-      context.memo('button.justifyCenter', func.invoke(justifyCenter, 'render'));
-      context.memo('button.justifyRight', func.invoke(justifyRight, 'render'));
-      context.memo('button.justifyFull', func.invoke(justifyFull, 'render'));
-      context.memo('button.outdent', func.invoke(outdent, 'render'));
-      context.memo('button.indent', func.invoke(indent, 'render'));
+      // context.memo('button.justifyLeft', func.invoke(justifyLeft, 'render'));
+      // context.memo('button.justifyCenter', func.invoke(justifyCenter, 'render'));
+      // context.memo('button.justifyRight', func.invoke(justifyRight, 'render'));
+      // context.memo('button.justifyFull', func.invoke(justifyFull, 'render'));
+      // context.memo('button.outdent', func.invoke(outdent, 'render'));
+      // context.memo('button.indent', func.invoke(indent, 'render'));
 
       context.memo('button.paragraph', function () {
         return ui.buttonGroup([
